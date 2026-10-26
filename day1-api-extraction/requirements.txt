@@ -1,0 +1,4 @@
+You need the following to work on the project.
+python version 3.9 +
+pandas 
+requests library
