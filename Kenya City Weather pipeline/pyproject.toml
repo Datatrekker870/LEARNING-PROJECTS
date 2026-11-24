@@ -1,0 +1,22 @@
+[project]
+name = "kenya-city-weather-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Kennedy Ndungu Wanjiru", email = "kenndungu538@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "load>=1.0.14",
+    "psycopg2>=2.9.13",
+    "requests>=2.34.2",
+    "sqlalchemy>=2.1.9",
+]
+
+[project.scripts]
+kenya-city-weather-pipeline = "kenya_city_weather_pipeline:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"

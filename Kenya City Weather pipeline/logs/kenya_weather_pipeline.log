@@ -1,0 +1,176 @@
+2026-11-24 16:09:09,270 | INFO     | __main__ | ============================================================
+2026-11-24 16:09:09,271 | INFO     | __main__ | Kenya Weather Pipeline started
+2026-11-24 16:09:09,271 | INFO     | __main__ | ============================================================
+2026-11-24 16:15:59,786 | INFO     | __main__ | ============================================================
+2026-11-24 16:15:59,786 | INFO     | __main__ | Kenya Weather Pipeline started
+2026-11-24 16:15:59,786 | INFO     | __main__ | ============================================================
+2026-11-24 16:16:02,710 | INFO     | load | Tables created/verified from SQL file
+2026-11-24 16:16:02,712 | INFO     | __main__ | --- GEOCODING phase ---
+2026-11-24 16:16:04,316 | INFO     | __main__ | Geocoded Nairobi -> city_id=184745
+2026-11-24 16:16:05,712 | INFO     | __main__ | Geocoded Mombasa -> city_id=186301
+2026-11-24 16:16:07,144 | INFO     | __main__ | Geocoded Kisumu -> city_id=191245
+2026-11-24 16:16:08,536 | INFO     | __main__ | Geocoded Nakuru -> city_id=184622
+2026-11-24 16:16:09,919 | INFO     | __main__ | Geocoded Eldoret -> city_id=198629
+2026-11-24 16:16:09,919 | INFO     | __main__ | --- EXTRACT phase ---
+2026-11-24 16:16:09,919 | INFO     | extract | Extraction window end date (today - 5d): 2026-11-19
+2026-11-24 16:16:10,640 | INFO     | extract | [Nairobi] Geocoded -> lat=-1.28333, lon=36.81667
+2026-11-24 16:16:11,244 | INFO     | extract | [Nairobi] Watermark=2026-11-19; requesting from 2026-11-20
+2026-11-24 16:16:11,244 | INFO     | extract | [Nairobi] Already up to date (start=2026-11-20 > end=2026-11-19); skipping
+2026-11-24 16:16:12,018 | INFO     | extract | [Mombasa] Geocoded -> lat=-4.05466, lon=39.66359
+2026-11-24 16:16:12,313 | INFO     | extract | [Mombasa] Watermark=2026-11-19; requesting from 2026-11-20
+2026-11-24 16:16:12,313 | INFO     | extract | [Mombasa] Already up to date (start=2026-11-20 > end=2026-11-19); skipping
+2026-11-24 16:16:13,086 | INFO     | extract | [Kisumu] Geocoded -> lat=-0.10221, lon=34.76171
+2026-11-24 16:16:13,381 | INFO     | extract | [Kisumu] Watermark=2026-11-19; requesting from 2026-11-20
+2026-11-24 16:16:13,382 | INFO     | extract | [Kisumu] Already up to date (start=2026-11-20 > end=2026-11-19); skipping
+2026-11-24 16:16:14,042 | INFO     | extract | [Nakuru] Geocoded -> lat=-0.30719, lon=36.07225
+2026-11-24 16:16:14,338 | INFO     | extract | [Nakuru] Watermark=2026-11-19; requesting from 2026-11-20
+2026-11-24 16:16:14,339 | INFO     | extract | [Nakuru] Already up to date (start=2026-11-20 > end=2026-11-19); skipping
+2026-11-24 16:16:15,000 | INFO     | extract | [Eldoret] Geocoded -> lat=0.52036, lon=35.26993
+2026-11-24 16:16:15,299 | INFO     | extract | [Eldoret] Watermark=2026-11-19; requesting from 2026-11-20
+2026-11-24 16:16:15,300 | INFO     | extract | [Eldoret] Already up to date (start=2026-11-20 > end=2026-11-19); skipping
+2026-11-24 16:16:15,301 | INFO     | __main__ | Extracted 0 raw records across 5 towns
+2026-11-24 16:16:15,302 | INFO     | __main__ | --- TRANSFORM phase ---
+2026-11-24 16:16:15,303 | INFO     | transform | Validation: accepted=0, rejected=0
+2026-11-24 16:16:15,303 | INFO     | __main__ | Prepared 0 fact rows, 0 rejected
+2026-11-24 16:16:15,304 | INFO     | __main__ | --- LOAD phase ---
+2026-11-24 16:16:16,784 | INFO     | load | Upserted 5 rows into dim_city
+2026-11-24 16:16:16,785 | INFO     | load | Upserted 0 rows into dim_date
+2026-11-24 16:16:16,786 | INFO     | load | Upserted 0 rows into fact_daily_weather
+2026-11-24 16:16:18,268 | INFO     | load | Upserted 5 rows into etl_watermark
+2026-11-24 16:16:18,269 | INFO     | load | Inserted 0 rows into rejected_records
+2026-11-24 16:16:18,864 | INFO     | load | Transaction committed. run_id=70
+2026-11-24 16:16:18,865 | INFO     | __main__ | Load committed. run_id=70
+2026-11-24 16:16:18,867 | INFO     | __main__ | ============================================================
+2026-11-24 16:16:18,868 | INFO     | __main__ | Pipeline finished successfully
+2026-11-24 16:16:18,868 | INFO     | __main__ | ============================================================
+2026-11-24 16:30:40,671 | INFO     | __main__ | ============================================================
+2026-11-24 16:30:40,672 | INFO     | __main__ | Kenya Weather Pipeline started
+2026-11-24 16:30:40,672 | INFO     | __main__ | ============================================================
+2026-11-24 16:30:43,450 | INFO     | load | Tables created/verified from SQL file
+2026-11-24 16:30:43,451 | INFO     | __main__ | --- GEOCODING phase ---
+2026-11-24 16:30:44,900 | INFO     | __main__ | Geocoded Nairobi -> city_id=184745
+2026-11-24 16:30:46,338 | INFO     | __main__ | Geocoded Mombasa -> city_id=186301
+2026-11-24 16:30:47,662 | INFO     | __main__ | Geocoded Kisumu -> city_id=191245
+2026-11-24 16:30:48,992 | INFO     | __main__ | Geocoded Nakuru -> city_id=184622
+2026-11-24 16:30:50,381 | INFO     | __main__ | Geocoded Eldoret -> city_id=198629
+2026-11-24 16:30:50,381 | INFO     | __main__ | --- EXTRACT phase ---
+2026-11-24 16:30:50,382 | INFO     | extract | Extraction window end date (today - 5d): 2026-11-19
+2026-11-24 16:30:51,037 | INFO     | extract | [Nairobi] Geocoded -> lat=-1.28333, lon=36.81667
+2026-11-24 16:30:51,623 | INFO     | extract | [Nairobi] Watermark=2026-11-19; requesting from 2026-11-20
+2026-11-24 16:30:51,624 | INFO     | extract | [Nairobi] Already up to date (start=2026-11-20 > end=2026-11-19); skipping
+2026-11-24 16:30:52,513 | INFO     | extract | [Mombasa] Geocoded -> lat=-4.05466, lon=39.66359
+2026-11-24 16:30:52,802 | INFO     | extract | [Mombasa] Watermark=2026-11-19; requesting from 2026-11-20
+2026-11-24 16:30:52,802 | INFO     | extract | [Mombasa] Already up to date (start=2026-11-20 > end=2026-11-19); skipping
+2026-11-24 16:30:53,457 | INFO     | extract | [Kisumu] Geocoded -> lat=-0.10221, lon=34.76171
+2026-11-24 16:30:53,743 | INFO     | extract | [Kisumu] Watermark=2026-11-19; requesting from 2026-11-20
+2026-11-24 16:30:53,744 | INFO     | extract | [Kisumu] Already up to date (start=2026-11-20 > end=2026-11-19); skipping
+2026-11-24 16:30:54,475 | INFO     | extract | [Nakuru] Geocoded -> lat=-0.30719, lon=36.07225
+2026-11-24 16:30:54,761 | INFO     | extract | [Nakuru] Watermark=2026-11-19; requesting from 2026-11-20
+2026-11-24 16:30:54,762 | INFO     | extract | [Nakuru] Already up to date (start=2026-11-20 > end=2026-11-19); skipping
+2026-11-24 16:30:55,426 | INFO     | extract | [Eldoret] Geocoded -> lat=0.52036, lon=35.26993
+2026-11-24 16:30:55,713 | INFO     | extract | [Eldoret] Watermark=2026-11-19; requesting from 2026-11-20
+2026-11-24 16:30:55,714 | INFO     | extract | [Eldoret] Already up to date (start=2026-11-20 > end=2026-11-19); skipping
+2026-11-24 16:30:55,714 | INFO     | __main__ | Extracted 0 raw records across 5 towns
+2026-11-24 16:30:55,715 | INFO     | __main__ | --- TRANSFORM phase ---
+2026-11-24 16:30:55,716 | INFO     | transform | Validation: accepted=0, rejected=0
+2026-11-24 16:30:55,717 | INFO     | __main__ | Prepared 0 fact rows, 0 rejected
+2026-11-24 16:30:55,717 | INFO     | __main__ | --- LOAD phase ---
+2026-11-24 16:30:57,151 | INFO     | load | Upserted 5 rows into dim_city
+2026-11-24 16:30:57,153 | INFO     | load | Upserted 0 rows into dim_date
+2026-11-24 16:30:57,153 | INFO     | load | Upserted 0 rows into fact_daily_weather
+2026-11-24 16:30:58,585 | INFO     | load | Upserted 5 rows into etl_watermark
+2026-11-24 16:30:58,586 | INFO     | load | Inserted 0 rows into rejected_records
+2026-11-24 16:30:59,160 | INFO     | load | Transaction committed. run_id=71
+2026-11-24 16:30:59,161 | INFO     | __main__ | Load committed. run_id=71
+2026-11-24 16:30:59,161 | INFO     | __main__ | ============================================================
+2026-11-24 16:30:59,162 | INFO     | __main__ | Pipeline finished successfully
+2026-11-24 16:30:59,162 | INFO     | __main__ | ============================================================
+2026-11-24 17:00:26,072 | INFO     | __main__ | ============================================================
+2026-11-24 17:00:26,072 | INFO     | __main__ | Kenya Weather Pipeline started
+2026-11-24 17:00:26,073 | INFO     | __main__ | ============================================================
+2026-11-24 17:00:29,284 | INFO     | load | Tables created/verified from SQL file
+2026-11-24 17:00:29,285 | INFO     | __main__ | --- GEOCODING phase ---
+2026-11-24 17:00:30,077 | ERROR    | __main__ | Geocoding failed for Nairobi: geocoder returned no id for 'Nairobi'. Skipping.
+2026-11-24 17:00:30,856 | ERROR    | __main__ | Geocoding failed for Mombasa: geocoder returned no id for 'Mombasa'. Skipping.
+2026-11-24 17:00:31,623 | ERROR    | __main__ | Geocoding failed for Kisumu: geocoder returned no id for 'Kisumu'. Skipping.
+2026-11-24 17:00:32,336 | ERROR    | __main__ | Geocoding failed for Nakuru: geocoder returned no id for 'Nakuru'. Skipping.
+2026-11-24 17:00:33,109 | ERROR    | __main__ | Geocoding failed for Eldoret: geocoder returned no id for 'Eldoret'. Skipping.
+2026-11-24 17:00:33,109 | ERROR    | __main__ | Pipeline failed: No towns geocoded; aborting run
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Python review execrcise - Copy\lux python\Kenya City Weather pipeline\pipeline.py", line 216, in main
+    raise RuntimeError("No towns geocoded; aborting run")
+RuntimeError: No towns geocoded; aborting run
+2026-11-24 17:00:33,979 | INFO     | load | Logged FAILED run. run_id=72
+2026-11-24 17:01:39,857 | INFO     | __main__ | ============================================================
+2026-11-24 17:01:39,857 | INFO     | __main__ | Kenya Weather Pipeline started
+2026-11-24 17:01:39,858 | INFO     | __main__ | ============================================================
+2026-11-24 17:01:42,507 | INFO     | load | Tables created/verified from SQL file
+2026-11-24 17:01:42,508 | INFO     | __main__ | --- GEOCODING phase ---
+2026-11-24 17:01:43,183 | ERROR    | __main__ | Geocoding failed for Nairobi: geocoder returned no id for 'Nairobi'. Skipping.
+2026-11-24 17:01:43,806 | ERROR    | __main__ | Geocoding failed for Mombasa: geocoder returned no id for 'Mombasa'. Skipping.
+2026-11-24 17:01:44,413 | ERROR    | __main__ | Geocoding failed for Kisumu: geocoder returned no id for 'Kisumu'. Skipping.
+2026-11-24 17:01:45,183 | ERROR    | __main__ | Geocoding failed for Nakuru: geocoder returned no id for 'Nakuru'. Skipping.
+2026-11-24 17:01:45,788 | ERROR    | __main__ | Geocoding failed for Eldoret: geocoder returned no id for 'Eldoret'. Skipping.
+2026-11-24 17:01:45,788 | ERROR    | __main__ | Pipeline failed: No towns geocoded; aborting run
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Python review execrcise - Copy\lux python\Kenya City Weather pipeline\pipeline.py", line 216, in main
+    raise RuntimeError("No towns geocoded; aborting run")
+RuntimeError: No towns geocoded; aborting run
+2026-11-24 17:01:46,628 | INFO     | load | Logged FAILED run. run_id=73
+2026-11-24 17:02:42,131 | INFO     | __main__ | ============================================================
+2026-11-24 17:02:42,131 | INFO     | __main__ | Kenya Weather Pipeline started
+2026-11-24 17:02:42,132 | INFO     | __main__ | ============================================================
+2026-11-24 17:02:44,912 | INFO     | load | Tables created/verified from SQL file
+2026-11-24 17:02:44,913 | INFO     | __main__ | --- GEOCODING phase ---
+2026-11-24 17:02:45,651 | ERROR    | __main__ | Geocoding failed for Nairobi: geocoder returned no id for 'Nairobi'. Skipping.
+2026-11-24 17:02:46,379 | ERROR    | __main__ | Geocoding failed for Mombasa: geocoder returned no id for 'Mombasa'. Skipping.
+2026-11-24 17:02:47,124 | ERROR    | __main__ | Geocoding failed for Kisumu: geocoder returned no id for 'Kisumu'. Skipping.
+2026-11-24 17:02:47,737 | ERROR    | __main__ | Geocoding failed for Nakuru: geocoder returned no id for 'Nakuru'. Skipping.
+2026-11-24 17:02:48,515 | ERROR    | __main__ | Geocoding failed for Eldoret: geocoder returned no id for 'Eldoret'. Skipping.
+2026-11-24 17:02:48,515 | ERROR    | __main__ | Pipeline failed: No towns geocoded; aborting run
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\Python review execrcise - Copy\lux python\Kenya City Weather pipeline\pipeline.py", line 216, in main
+    raise RuntimeError("No towns geocoded; aborting run")
+RuntimeError: No towns geocoded; aborting run
+2026-11-24 17:02:49,393 | INFO     | load | Logged FAILED run. run_id=74
+2026-11-24 17:07:34,036 | INFO     | __main__ | ============================================================
+2026-11-24 17:07:34,036 | INFO     | __main__ | Kenya Weather Pipeline started
+2026-11-24 17:07:34,037 | INFO     | __main__ | ============================================================
+2026-11-24 17:07:36,711 | INFO     | load | Tables created/verified from SQL file
+2026-11-24 17:07:36,713 | INFO     | __main__ | --- GEOCODING phase ---
+2026-11-24 17:07:37,557 | INFO     | __main__ | Geocoded Nairobi -> city_id=184745
+2026-11-24 17:07:38,289 | INFO     | __main__ | Geocoded Mombasa -> city_id=186301
+2026-11-24 17:07:38,905 | INFO     | __main__ | Geocoded Kisumu -> city_id=191245
+2026-11-24 17:07:39,566 | INFO     | __main__ | Geocoded Nakuru -> city_id=184622
+2026-11-24 17:07:40,176 | INFO     | __main__ | Geocoded Eldoret -> city_id=198629
+2026-11-24 17:07:40,176 | INFO     | __main__ | --- EXTRACT phase ---
+2026-11-24 17:07:40,177 | INFO     | extract | Extraction window end date (today - 5d): 2026-11-19
+2026-11-24 17:07:40,782 | INFO     | extract | [Nairobi] Geocoded -> lat=-1.28333, lon=36.81667
+2026-11-24 17:07:41,352 | INFO     | extract | [Nairobi] Watermark=2026-11-19; requesting from 2026-11-20
+2026-11-24 17:07:41,352 | INFO     | extract | [Nairobi] Already up to date (start=2026-11-20 > end=2026-11-19); skipping
+2026-11-24 17:07:42,019 | INFO     | extract | [Mombasa] Geocoded -> lat=-4.05466, lon=39.66359
+2026-11-24 17:07:42,300 | INFO     | extract | [Mombasa] Watermark=2026-11-19; requesting from 2026-11-20
+2026-11-24 17:07:42,300 | INFO     | extract | [Mombasa] Already up to date (start=2026-11-20 > end=2026-11-19); skipping
+2026-11-24 17:07:42,911 | INFO     | extract | [Kisumu] Geocoded -> lat=-0.10221, lon=34.76171
+2026-11-24 17:07:43,192 | INFO     | extract | [Kisumu] Watermark=2026-11-19; requesting from 2026-11-20
+2026-11-24 17:07:43,193 | INFO     | extract | [Kisumu] Already up to date (start=2026-11-20 > end=2026-11-19); skipping
+2026-11-24 17:07:43,917 | INFO     | extract | [Nakuru] Geocoded -> lat=-0.30719, lon=36.07225
+2026-11-24 17:07:44,197 | INFO     | extract | [Nakuru] Watermark=2026-11-19; requesting from 2026-11-20
+2026-11-24 17:07:44,198 | INFO     | extract | [Nakuru] Already up to date (start=2026-11-20 > end=2026-11-19); skipping
+2026-11-24 17:07:44,809 | INFO     | extract | [Eldoret] Geocoded -> lat=0.52036, lon=35.26993
+2026-11-24 17:07:45,091 | INFO     | extract | [Eldoret] Watermark=2026-11-19; requesting from 2026-11-20
+2026-11-24 17:07:45,092 | INFO     | extract | [Eldoret] Already up to date (start=2026-11-20 > end=2026-11-19); skipping
+2026-11-24 17:07:45,093 | INFO     | __main__ | Extracted 0 raw records across 5 towns
+2026-11-24 17:07:45,094 | INFO     | __main__ | --- TRANSFORM phase ---
+2026-11-24 17:07:45,095 | INFO     | transform | transform: no raw records; returning empty result
+2026-11-24 17:07:45,096 | INFO     | __main__ | Prepared 0 fact rows, 0 rejected
+2026-11-24 17:07:45,096 | INFO     | __main__ | --- LOAD phase ---
+2026-11-24 17:07:46,509 | INFO     | load | Upserted 5 rows into dim_city
+2026-11-24 17:07:46,510 | INFO     | load | Upserted 0 rows into dim_date
+2026-11-24 17:07:46,511 | INFO     | load | Upserted 0 rows into fact_daily_weather
+2026-11-24 17:07:46,512 | INFO     | load | No watermarks to update
+2026-11-24 17:07:47,074 | INFO     | load | Transaction committed. run_id=75
+2026-11-24 17:07:47,075 | INFO     | __main__ | Load committed. run_id=75
+2026-11-24 17:07:47,077 | INFO     | __main__ | ============================================================
+2026-11-24 17:07:47,078 | INFO     | __main__ | Pipeline finished successfully
+2026-11-24 17:07:47,079 | INFO     | __main__ | ============================================================
